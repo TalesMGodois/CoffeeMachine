@@ -226,12 +226,7 @@ module coffee_machine(selec_produto,dinheiro,clock,reset,hasProduto,hasTroco);
 								moedas_troco[4] = moedas_troco[4] +1;
 								moedas[4] = moedas[4] -1;
 								num_moedas = num_moedas -1;
-								// $display(aux_troco);
-								// $display(valor_final);
-								// $display(aux_troco < valor_final);
-								// $display(aux_troco <= valor_final);
-								// $display(aux_troco == valor_final);
-								// $display(aux_troco > valor_final);
+
 								if(aux_troco == valor_final) begin
 									$display("Troco: %f, Com a seguinte distribuição:",aux_troco);
 									$display("R$1,00: %d || R$0,50: %d || R$0,25: %d || R$0,10: %d || R$0,05: %d ",moedas_troco[4],moedas_troco[3],moedas_troco[2],moedas_troco[1],moedas_troco[0]);
@@ -268,74 +263,7 @@ module coffee_machine(selec_produto,dinheiro,clock,reset,hasProduto,hasTroco);
 				$display("outOfLoop");
 				$display(outOfLoop);
 			end 
-							// if(moedas[3] >0 && using[3] !=0) begin
-							// 	$display("50 centavos");
-							// 	aux_troco = aux_troco + 0.50;
-							// 	if(aux_troco < valor_final) begin
-							// 		moedas_troco[3] = moedas_troco[3] +1;
-							// 		moedas[3] = moedas[3] -1;
-							// 		num_moedas = num_moedas -1;
-
-
-							// 	end else begin
-							// 		moedas_troco[3] = moedas_troco[3] -1;
-							// 		aux_troco = aux_troco - 0.50;
-							// 		using[3] = 0;
-							// 	end
-								
-							// end else begin
-							// 	if(moedas[2]> 0 && using[2] !=0) begin
-							// 		$display("25 centavos");
-							// 		aux_troco = aux_troco + 0.25;
-							// 		if(aux_troco <valor_final) begin
-							// 			moedas_troco[2] = moedas_troco[2] +1;
-							// 			moedas[2] = moedas[2] -1;
-							// 			num_moedas = num_moedas -1;
-
-							// 		end else begin
-							// 			moedas_troco[2] = moedas_troco[2] -1;
-							// 			aux_troco = aux_troco - 0.25;
-							// 			using[2] = 0;
-							// 		end
-							// 	end else begin
-							// 		if(moedas[1] >0 && using[1] !=0) begin
-							// 			$display("10 centavos");
-							// 			aux_troco = aux_troco + 0.10;
-							// 			if(aux_troco<valor_final) begin
-							// 				moedas_troco[1] = moedas_troco[1] +1;
-							// 				moedas[1] = moedas[1] -1;
-							// 				num_moedas = num_moedas -1;
-
-							// 			end	else begin
-							// 				moedas_troco[1] = moedas_troco[1] -1;
-							// 				aux_troco = aux_troco - 0.10;
-							// 				using[1] = 0;
-							// 			end					
-							// 		end else begin
-							// 			if(moedas[0] > 0 && using[0] != 0) begin
-							// 				$display("5 centavos");
-							// 				aux_troco = aux_troco + 0.05;
-							// 				if(aux_troco<valor_final) begin
-							// 					moedas_troco[0] = moedas_troco[0] +1;
-							// 					moedas[0] = moedas[0] -1;
-							// 					num_moedas = num_moedas -1;
-							// 				end else begin
-							// 					moedas_troco[0] = moedas_troco[0] -1;
-							// 					using[0] = 0;
-							// 					aux_troco = aux_troco - 0.05;
-												
-							// 				end
-							// 			end else begin
-											
-							// 			end
-											
-							// 			end
-								// 	end
-								// end
-							// end
-						
-		
-
+							
 			ENTREGA_PRODUTO: begin
 				$display("Estado: ENTREGA_PRODUTO");
 				entregue =1;

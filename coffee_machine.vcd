@@ -1,0 +1,179 @@
+$date
+	Sat Jun 06 11:51:00 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module coffee_machine_TB $end
+$var wire 3 ! dinheiro [2:0] $end
+$var wire 1 " reset $end
+$var wire 2 # selec_produto [1:0] $end
+$var reg 1 $ clock $end
+$scope module source $end
+$var wire 1 % clock $end
+$var reg 3 & dinheiro [2:0] $end
+$var reg 1 ' reset $end
+$var reg 2 ( selec_produto [1:0] $end
+$upscope $end
+$scope module coffee_machine $end
+$var wire 1 % clock $end
+$var wire 3 ) dinheiro [2:0] $end
+$var wire 1 " reset $end
+$var wire 2 * selec_produto [1:0] $end
+$var reg 2 + STATE [1:0] $end
+$var reg 1 , TOTAL $end
+$var integer 32 - VALOR_INSERIDO [31:0] $end
+$var integer 32 . VALOR_PRODUTO [31:0] $end
+$var integer 32 / aux_troco [31:0] $end
+$var reg 1 0 entregue $end
+$var reg 1 1 escolhido $end
+$var reg 1 2 hasProduto $end
+$var reg 1 3 hasTroco $end
+$var reg 5 4 i [0:4] $end
+$var reg 1 5 inicio $end
+$var reg 3 6 notas [2:0] $end
+$var integer 32 7 num_moedas [31:0] $end
+$var integer 32 8 outOfLoop [31:0] $end
+$var reg 2 9 pago [1:0] $end
+$var reg 5 : using [4:0] $end
+$var integer 32 ; valor_final [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ;
+b11111 :
+b0 9
+b1 8
+b110010 7
+b0 6
+05
+b11 4
+x3
+x2
+01
+00
+b0 /
+b0 .
+b0 -
+0,
+bx +
+b0 *
+b111 )
+b0 (
+x'
+b111 &
+0%
+0$
+b0 #
+x"
+b111 !
+$end
+#5
+b0 +
+03
+02
+b100 6
+b1010 -
+b1 .
+0$
+0%
+#10
+15
+b0 6
+1$
+1%
+#15
+0$
+0%
+1'
+1"
+#20
+b1 +
+b100 6
+1$
+1%
+#25
+0$
+0%
+#30
+11
+12
+b0 6
+1$
+1%
+#35
+0$
+0%
+#40
+b10 +
+b100 6
+1$
+1%
+#45
+0$
+0%
+#50
+b10 9
+b1111 :
+b101001 7
+b1001 /
+13
+b1001 ;
+b1001 8
+b0 6
+1$
+1%
+#55
+0$
+0%
+#60
+b11 +
+b0 8
+b100 6
+1$
+1%
+#65
+0$
+0%
+#70
+10
+b0 6
+1$
+1%
+#75
+0$
+0%
+#80
+b0 +
+b100 6
+1$
+1%
+#85
+0$
+0%
+#90
+b1 +
+01
+00
+03
+02
+b0 6
+1$
+1%
+#95
+0$
+0%
+#100
+11
+12
+b100 6
+1$
+1%
+#105
+0$
+0%
